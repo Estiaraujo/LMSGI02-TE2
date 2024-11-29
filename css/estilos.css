@@ -1,0 +1,388 @@
+/*
+Autor: Esti Araujo
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio Web
+*/
+
+html {
+    font-size: 14px; /*Tamaño de letra en toda la página para poder usar la unidad rem en el texto*/
+}
+
+/*Estilos del body*/
+body {
+	text-align: center;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+    background-color:rgba(128,3,1,255);
+	color: #fff;
+	padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Estilos de los elementos del header*/
+header {
+    position: relative;     
+    display: flex;           
+    justify-content: center;  
+    align-items: center;      
+    height: 29.94vh;           
+}
+
+header img {
+    max-width: 90%;         
+    width: auto;
+    height: 29.94vh;           
+    z-index: 1;  
+}
+
+h1 {
+    position: absolute;      
+    color: white;            
+    font-size: 2.3rem;         
+    font-weight: bold; 
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;  /*Combinacion de sombras para crear efecto neon*/     
+    text-align: center;     
+    z-index: 2;      
+}
+
+/*Estilos de los elementos del navegación*/
+.navegacion {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 6.98vh;
+    background-color: rgb(191, 20, 20);
+}
+
+nav ul {
+	list-style: none;	
+}
+
+nav li { 
+    font-size: 1.4rem;
+    padding: 25px;
+    margin: 0px;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: white;
+    font-weight: 800;
+}
+
+nav ul a:hover {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+	background-color:rgba(128,3,1,255);
+    padding: 1.8rem;
+}  
+
+/*Estilos de las secciones*/
+section {
+    background-color: black;
+    padding: 50px;
+    border-radius: 5px;
+    border: 3px solid red;
+    margin: 20px;
+    overflow: scroll;
+}
+
+/*Estilos del header que da título a las páginas*/
+h2 {
+    margin: 0px 0px 50px 0px;
+    font-size: 2.1rem;
+}
+
+/*Estilos de la presentación de la página principal*/
+figure {
+    float: left;
+    margin: 10px 50px 20px 300px;
+}
+
+figure img {
+    width: 16.82vw;
+    height: auto;	
+}
+
+figcaption {
+    font-size: 1rem;
+    text-align: left;
+    background-color: rgba(191, 20, 20, 0.3)
+}
+
+.texto p {
+	text-align: justify;
+    font-size: 1.4rem;
+    margin: 0px 300px 20px 300px;
+}
+
+/*Estilos de ültimas críticas en la página principal*/
+h3 {
+    font-size: 2.1rem;
+    text-align: left;
+    margin: 0px 0px 20px 45px;
+}
+
+.ultimas-criticas {
+    display: inline-block;
+    margin: 20px;
+    width: 19.97vw;
+    height: 29.94vh;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ultimas-criticas img {
+    width: 15.77vw;
+    height: 19.96vh;
+    margin: 30px 0px 0px 0px;
+    border-radius: 15px;
+    border: 2px solid grey;  
+}
+
+.ultimas-criticas p a {
+    font-size: 1.14rem;
+	text-decoration: none;
+	color: rgb(191, 20, 20);
+    font-weight: 800;
+    margin: 20px;
+}
+
+.ultimas-criticas p a:hover {
+    color: #fff;
+	background-color: rgb(191, 20, 20);
+    transition: all 0.3s ease; /*atributo para que la transicion al hover sea más suave*/
+}
+
+/*Estilos de la página Noticias*/
+.noticias {
+    display: flex; 
+    background-color: white; 
+    border: 1px solid #ff0000;
+    border-radius: 15px; 
+    overflow: hidden;
+    padding: 2rem 10rem 2rem 5rem;
+    margin: 1rem auto;
+    max-width: 65%;
+}   
+.noticias img{
+    width: auto; 
+    height: 150px;
+    border-radius: 15px; 
+    margin: 20px 30px 0px 0px 
+}
+
+.noticias div {
+    color: black;
+    text-align: justify;
+    font-size: 1.3rem;
+    margin-top: 40px;
+}
+
+.noticias h4 {
+    all: unset;
+    font-weight: bold;
+    
+}
+.noticias p {
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.noticias a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1.5px solid rgb(191, 20, 20);
+    background-color:rgb(191, 20, 20);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-left: 36vw;
+}
+
+.noticias a:hover {
+    background-color:white;
+    color: rgb(191, 20, 20); 
+    border: 1.5px solid rgb(191, 20, 20);
+    box-shadow: 0 0 8px 3px rgb(191, 20, 20);
+    transition: all 0.3s ease;
+}
+
+/*Estilos de la página Categorías*/
+.categorias {
+    display: inline-block; 
+    position: relative;
+    border: 1px solid #ff0000;
+    border-radius: 15px; 
+    overflow: hidden;
+    width: 31.54vw;
+    height: 39.92vh;     
+    margin: 0px 50px 50px 50px;  
+}  
+
+.categorias img {
+    width: 31.54vw;
+    height: 39.92vh;
+    border-radius: 15px; 
+}
+
+.categorias a {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;       
+    transform: translate(-50%, -50%);
+    font-size: 3.6rem;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding: 15px;
+    border: 1.5px solid rgb(191, 20, 20);
+    border-radius: 15px;
+}
+
+.categorias a:hover {
+    text-shadow: 0 0px 20px white;
+    transition: all 0.3s ease;
+}
+
+/*Estilos de la página Estrenos*/
+.estrenos {
+    display: inline-block;
+    margin: 20px;
+    width: 25vw;
+    height: 40vh;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.estrenos img {
+    width: 19.6vw;
+    height: 28.7vh;
+    margin: 30px 0px 0px 0px;
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+
+.estrenos p a {
+    font-size: 1.15rem;
+	text-decoration: none;
+	color: rgb(191, 20, 20);
+    font-weight: 800;
+    margin: 20px;
+}
+
+.estrenos p a:hover {
+    color: #fff;
+	background-color: rgb(191, 20, 20);
+    transition: all 0.3s ease;
+}
+
+/*Estilos de la página Crítica Alien:Romulus*/
+h4 {
+    font-size: 1.6rem;
+}
+
+.estrellas-contenedor {
+    display: inline-block;
+    border: 2px solid #ff0000;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.estrellas {
+    width: 2.5vw;
+    height: auto;   
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.contenedor-texto {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 1.4rem;
+} 
+
+.critica-media {
+    width: 31.55vw;
+    height: 39.9vh;
+    margin: 2.5vh 0px 2.5vh 0px;
+}
+
+h6 {
+    align-self: flex-start;
+    font-size: 1.4rem;  
+    text-align: left;
+    margin: 0vh 0px 0vh 0px;   
+}
+
+/*Estilos de la página Contacto*/
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 0vw 15vw 0vw 15vw;
+}
+
+.formulario-contenedor {
+    justify-content: center;
+    justify-items: center;
+}
+
+form {
+    text-align: left;
+}
+
+input {
+    width: 20vw;
+    margin: 5px 0px 10px 0px;
+}
+
+textarea {
+    width: 20vw;
+    margin: 5px 0px 20px 0px;
+}
+
+.redes-contenedor {
+    width: 20vw;
+    height: auto;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.contacto img {
+    width: 4.2vw;
+}
+
+.redes-contenedor p a {
+    text-decoration: none;
+    color:#ff0000;
+    
+}
+
+.redes-contenedor p a:hover {
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/*Estilos del Footer*/
+footer {
+	background-color: rgb(191, 20, 20);
+    font-size: 1rem;
+}

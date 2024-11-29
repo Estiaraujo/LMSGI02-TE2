@@ -1,0 +1,74 @@
+ <!--
+Autor: Esti Araujo
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio Web
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="utf-8">
+    <title>Contacto | Final Girl Archives</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header> 
+    <h1 class="titulo-header">FINAL GIRL ARCHIVES</h1>
+    <img class="img-header" src="../img/header.jpg" alt="imagen de una mujer encapuchada"/>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul class="navegacion">
+      <li><a href="../index.html">INICIO</a></li>
+      <li><a href="noticias.html">NOTICIAS</a></li>
+      <li><a href="categorias.html">CATEGORÍAS</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bloque principal -->
+  <main>
+
+  <!-- Sección de Contacto -->
+    <section>
+      <h2>CONTACTA CON NOSOTRAS</h2>
+      <div class="contacto"> <!-- Utilizo un div para unir los dos articles en un contenedor y alinearlos -->
+    
+  <!-- Formulario -->
+        <article class="formulario-contenedor">
+          <form action="mailto:infofinalgirlarchives@gmail.com" method="post">
+              <label>Nombre</label><br>
+              <input type="text" name="nombre" required><br><!-- "required" hace que sea obligatorio rellenar ese apartado para emviar el formulario -->
+              <label>E-mail</label><br>
+              <input type="text" name="email" required><br>
+              <label>Mensaje</label><br>
+              <textarea name="message" rows="15" required></textarea><br>
+              <button type="submit">Enviar</button>
+          </form>
+        </article>
+
+  <!-- Redes sociales -->
+      <article class="redes-contenedor">
+        <p>Si lo prefieres, puedes contactarnos mediante nuestras redes sociales.</p>
+        <a href="#"><img src="../img/contacto/redes_twitter.png" alt="icono de twitter"></a>
+        <a href="#"><img src="../img/contacto/redes_instagram.png" alt="icono de instagram"></a>
+        <a href="#"><img src="../img/contacto/redes_facebook.png" alt="icono de facebook"></a>
+        <a href="#"><img src="../img/contacto/redes_tumblr.png" alt="icono de tumbrl"></a>
+        <p>También puedes consultar nuestras reseñas y listas de recomendaciones en nuestro perfil de <a href="https://letterboxd.com/">Letterboxd</a>.</p>
+      </article>
+    </div>
+    </section>   
+  </main> 
+
+  <!--Pie de página -->
+  <footer>
+    <p>Autoría y licencias: </p>
+    <p>Página web realizada por Esti Araujo con fines educativos | Todos los derechos de las imágenes están reservados y pertenecen a sus autores | Creative Commons Attribution 4.0 International <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer"
+      style="display:inline-block; color: white;text-decoration: none;">(CC BY 4.0)</a>.</p>
+  </footer>
+</body>
+</html>
